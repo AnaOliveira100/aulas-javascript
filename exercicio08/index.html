@@ -1,0 +1,69 @@
+exerccio 08simplelight
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria com SimpleLightbox</title>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Exercício 08: Galeria de Fotos usando a lib SimpleLightbox</h1>
+    <p>Site oficial: <a href="https://simplelightbox.js.org/" target="_blank">SimpleLightbox</a></p>
+
+    <p><i>Veja a documentação no site oficial e, seguindo as instruções, monte a estrutura necessária para implementar uma galeria de imagens.</i></p>
+
+    <hr>
+
+    <div class="galeria">
+         <!-- Coloque aqui cada foto pequena (thumb) dentro de um link <a>.
+        E cada link, deve apontar para a versão grande da foto. -->
+        
+  
+        
+  <div class="galeria">
+    <a href="imagens/grande1.jpg" title="montanha verde">
+        <img src="imagens/thumb1.jpg" alt=""></a>
+
+<div class="galeria">
+    <a href="imagens/grande2.jpg" title="ceu estrelado">
+        <img src="imagens/thumb2.jpg" alt=""></a>
+
+        <div class="galeria">
+    <a href="imagens/grande3.jpg" title="oceano e montanha">
+        <img src="imagens/thumb3.jpg" alt=""></a>
+
+        <div class="galeria">
+    <a href="imagens/grande4.jpg" title="trem nas montanhas">
+        <img src="imagens/thumb4.jpg" alt=""></a>
+
+            <div class="galeria">
+    <a href="imagens/grande5.jpg" title="lua vermelha">
+        <img src="imagens/thumb5.jpg" alt=""></a>
+
+            <div class="galeria">
+    <a href="imagens/grande6.jpg" title="montanhas">
+        <img src="imagens/thumb6.jpg" alt=""></a>
+
+ 
+</div>
+
+    </div>
+
+    <script>
+
+var lightbox = new SimpleLightbox('.galeria a', { /* options */ });
+
+    </script>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+</body>
+
+</html>
