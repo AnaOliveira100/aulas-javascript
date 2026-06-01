@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe geral do JS</title>
+</head>
+<body>
+    <h1>Começando com JavaScript</h1>
+    <p><b>Importante:</b> JavaScript <mark>NÃO É</mark> Java!</p>
+    <p>Quer abreviar? Pode chamar de <b>JS</b>.</p>
+
+<script>
+    // Comentário de UMA LINHA (CTRL ;)
+    /* Comentário de
+    múltiplas linhas (SHIFT ALT A) */
+
+    // Comando de saída
+    /* Tudo que queremos comunicar através
+    da linguagem, precisa de uma "saída".
+    Para o programador(a), no JS, o comando
+    abaixo é a principal forma de fazer isso. */
+    console.log("Olá mundo!");
+
+    /* Variáveis e Constantes
+    Permitem armazenar dados na memória.
+    Você pretende em algum momento realizar
+    operações de qualquer natureza? Então PRIMEIRO
+    guarde os dados em memória. */
+
+    // Variável: o valor/expressão PODE mudar ao longo do tempo
+    let ano = 2026; // inteiro
+    let periferico = "Mouse"; // "string" (texto)
+    let preco = 257.89; // decimal (usa-se ponto)
+
+    console.log("Exemplos de variáveis:");
+    console.log(ano);
+    console.log(periferico);
+    console.log(preco);
+
+    // Atualizando/Modificando o valor da variável
+    // Atenção: não coloque let de novo
+    preco = 1000;
+    console.log(preco);
+
+    // Declarando variáveis (SEM VALOR)
+    // Variáveis permitem isso
+    let teste1, teste2, teste3;
+
+    // Constante: representa valor/expressão fixo, nunca muda
+    const aluno = "Fulano";
+    const desconto = 10;
+    const empresa = "ABC Tecnologia";
+    // const teste4; Isso também dá erro (precisa de valor)
+
+    console.log("Exemplos de constantes:");
+    console.log(aluno);
+    console.log(desconto);
+    console.log(empresa);
+    
+    /* A linha abaixo dá erro, pois não podemos mudar o
+    valor de constantes */
+    // aluno = "Beltrano";
+    
+    /* Saída de dados personalizada */
+    
+    /* Frase de exemplo:
+    O produto mouse custa R$ 1000 reais. */
+
+    // CONCATENAÇÃO 
+    console.log("O produto "+periferico+" custa R$ "+preco+" reais.")
+
+    // TEMPLATE STRING/LITERAL (crase ou acento grave ``)
+    // Atenção: segure o SHIFT e aperte 2 vezes o botão do acento
+    console.log(`O produto ${periferico} custa R$ ${preco} reais.`);   
+    
+
+</script>
+
+
+</body>
+</html>
